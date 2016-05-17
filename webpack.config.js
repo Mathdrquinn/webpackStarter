@@ -1,27 +1,18 @@
 var path = require('path');
 var webpack = require('webpack');
 
-var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('shared.js')
-
 module.exports = {
     context: path.resolve('js'),
     entry: ['./app.es6'],
     output: {
         path: path.resolve('build/js/'),
         publicPath: '/public/assets/js/',
-        filename: '[name].js'
+        filename: 'bundle.js'
     },
     devServer: {
         contentBase: 'public',
     },
     module: {
-        // preLoaders: [
-        //     {
-        //         test: /\.js$/,
-        //         exclude: 'node_modules',
-        //         loader: 'jshint-loader',
-        //     },
-        // ],
         loaders: [
             {
                 test: /\.es6$/,
@@ -33,9 +24,6 @@ module.exports = {
             }
         ],
     },
-    plugins: [
-        commonsPlugin
-    ],
     resolve: {
         extensions: ['', '.js', '.es6'],
     },
