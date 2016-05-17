@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --inline --porgress --colors",
-    // -d flag produces sourcemaps
-    "dev": "webpack-dev-server -d --inline --porgress --colors"
+    "dev": "webpack-dev-server -d --inline --porgress --colors",
+    "prod": "webpack-dev-server --config webpack-production.config.js"
   },
   "keywords": [],
   "author": "Joe Eames",
