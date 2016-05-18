@@ -28,8 +28,12 @@
     "sass-loader": "^3.2.0",
     "strip-loader": "^0.1.2",
     "style-loader": "^0.13.1",
+    "timestamp-webpack-plugin": "^0.2.3",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "jquery": "^2.2.3"
   }
 }

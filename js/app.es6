@@ -1,11 +1,11 @@
+import login from './login';
+import {} from './utils';
+
 console.log('App Loaded');
 
-var img = document.createElement('img');
-img.style.height = '25%';
-img.style.width = '25%';
-img.src = require('../images/picture.png');
+login('jackets', 'letmein');
 
-document.getElementById('img_container').appendChild(img);
+$('#TestDiv').text(`This is the jQuery modified text you're seeing`);
 
 require('../css/bootstrap.css');
 require('../css/app.scss');
